@@ -27,9 +27,7 @@ def get_user_inputs():
     Returns:
     tuple: A tuple containing four integers in the following order:
         (number_of_intervals, work_period, short_break_period, long_break_period)
-
-    Note: Input values must be whole numbers. The function will raise a ValueError 
-    if non-integer values are entered.
+        
     """
     
     number_of_intervals = int(input("How many pomodoros would you like to complete today? "))  
