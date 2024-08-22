@@ -93,6 +93,7 @@ def start_pomodoro_cycle(number_of_intervals):
         pygame.mixer.Sound(short_break_sound).play()
         send_notification("Session complete. Good work!", f"Time for a short break! You have completed {count} pomodoros so far")
         time.sleep(short_break_period * 60)  # custom short break period 
+        pygame.mixer.Sound(short_break_sound).play()
         send_notification("Back to work!", f"Only {number_of_intervals - count} pomodoros to go until your long break.")
     pygame.mixer.Sound(long_break_sound).play()
     send_notification("Time for a long break!", "")
